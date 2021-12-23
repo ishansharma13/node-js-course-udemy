@@ -1,15 +1,19 @@
 <html>
-    <head><title>
-        Home Page
-    </title></head>
-    <body>
-        <header style="text-align:center;"><h1> Home Page</h1></header>
-        <main>
-            <form action="/message" method="POST">
-                <label id="message"> Enter Message </label>
-                <input type="text" id="message" name="message"/>
-                <button type="submit"> Send Message </button>
-            </form>
-        </main>
-    </body>
+    <head>
+        <title>
+            Home Page
+        </title>
+        <body>
+            <header style="text-align: center;">
+                <h1> Home Page</h1>
+            </header>
+            <main>
+                <form action="/create-user" method="POST">
+                    <label id="username"> Enter Username</label>
+                    <input type="text" id="username" name="username" />
+                    <button type="submit">Save</button>
+                </form>
+            </main>
+        </body>
+    </head>
 </html>
