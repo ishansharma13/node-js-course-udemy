@@ -1,0 +1,23 @@
+{
+  "name": "section-4",
+  "version": "1.0.0",
+  "description": "trying out npm init as part of section-4",
+  "main": "app.js",
+  "scripts": {
+    "test": "pwd",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishansharma13/node-js-course-udemy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishansharma13/node-js-course-udemy/issues"
+  },
+  "homepage": "https://github.com/ishansharma13/node-js-course-udemy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
