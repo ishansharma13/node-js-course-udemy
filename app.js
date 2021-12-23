@@ -2,8 +2,8 @@ const http = require('http');
 const fs = require('fs');
 //creates a server
 
-const home = fs.readFileSync(__dirname+'/home.html','utf8');
-const about = fs.readFileSync(__dirname+'/about.html','utf8');
+const home = fs.readFileSync(__dirname+'/home.html','utf8'); // synchronous
+const about = fs.readFileSync(__dirname+'/about.html','utf8'); // synchronous
 const server = http.createServer((req,res)=>{
     const url = req.url;
     const method = req.method;
