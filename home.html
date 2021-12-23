@@ -5,9 +5,9 @@
     <body>
         <header style="text-align:center;"><h1> Home Page</h1></header>
         <main>
-            <form method="post">
+            <form action="/message" method="POST">
                 <label id="message"> Enter Message </label>
-                <input type="text" id="message" />
+                <input type="text" id="message" name="message"/>
                 <button type="submit"> Send Message </button>
             </form>
         </main>
