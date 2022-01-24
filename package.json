@@ -1,26 +1,24 @@
 {
-  "name": "section-4",
+  "name": "assignment-2",
   "version": "1.0.0",
-  "description": "trying out npm init as part of section-4",
-  "main": "app.js",
+  "description": "Code as per part of assignment-2 :node-js",
+  "main": "index.js",
   "scripts": {
-    "test": "pwd",
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ishansharma13/node-js-course-udemy.git"
   },
-  "author": "",
+  "author": "ishan sharma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ishansharma13/node-js-course-udemy/issues"
   },
   "homepage": "https://github.com/ishansharma13/node-js-course-udemy#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
   }
 }
