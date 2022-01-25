@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/ishansharma13/node-js-course-udemy#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
   }
 }
