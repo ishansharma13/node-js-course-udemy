@@ -2,8 +2,10 @@
 const Product = require('../models/product');
 exports.getProductListing = (req,res,next)=>{
     // res.sendFile(path.join(__dirname,'..','views','shop.html'));
-    const products = Product.fetchAll();
-    res.render('shop',{prods: products,docTitle:'Shop',path: '/'});
+    const products = Product.fetchAll(products =>{
+        res.render('shop',{prods: products,docTitle:'Shop',path: '/'});
+    });
+    
 }
 
 exports.getAddProductPage = (req,res,next)=>{
