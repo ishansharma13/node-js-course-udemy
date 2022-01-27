@@ -1,6 +1,8 @@
-const products = [];
+// const products = [];
+const Product = require('../models/product');
 exports.getProductListing = (req,res,next)=>{
     // res.sendFile(path.join(__dirname,'..','views','shop.html'));
+    const products = Product.fetchAll();
     res.render('shop',{prods: products,docTitle:'Shop',path: '/'});
 }
 
@@ -10,6 +12,7 @@ exports.getAddProductPage = (req,res,next)=>{
 }
 
 exports.postNewProduct = (req,res,next)=>{
-    products.push({'title': req.body.title});
+    const product = new Product(req.body.title);
+    product.save();
     res.redirect('/');
 }
