@@ -10,7 +10,8 @@ exports.getProductListing = (req,res,next)=>{
 exports.getIndex = (req,res,next)=>{
     // res.sendFile(path.join(__dirname,'..','views','shop.html'));
     const products = Product.fetchAll(products =>{
-        res.render('shop/index',{prods: products,docTitle:'Featured Products',path: '/'});
+        const featuredProducts = products.length>0?[products[products.length-1]]:[];
+        res.render('shop/index',{prods: featuredProducts,docTitle:'Featured Products',path: '/'});
     });
     
 }
@@ -20,7 +21,7 @@ exports.getAddProductPage = (req,res,next)=>{
 }
 
 exports.postNewProduct = (req,res,next)=>{
-    const product = new Product(req.body.title);
+    const product = new Product({...req.body});
     product.save();
     res.redirect('/');
 }
