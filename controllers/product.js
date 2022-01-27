@@ -3,14 +3,14 @@ const Product = require('../models/product');
 exports.getProductListing = (req,res,next)=>{
     // res.sendFile(path.join(__dirname,'..','views','shop.html'));
     const products = Product.fetchAll(products =>{
-        res.render('shop/product-listing',{prods: products,docTitle:'Shop',path: '/'});
+        res.render('shop/product-listing',{prods: products,docTitle:'All Products',path: '/all-products'});
     });
     
 }
 exports.getIndex = (req,res,next)=>{
     // res.sendFile(path.join(__dirname,'..','views','shop.html'));
     const products = Product.fetchAll(products =>{
-        res.render('shop/index',{prods: products,docTitle:'Shop',path: '/'});
+        res.render('shop/index',{prods: products,docTitle:'Featured Products',path: '/'});
     });
     
 }
